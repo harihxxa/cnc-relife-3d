@@ -1,0 +1,9 @@
+Flask
+numpy
+opencv-python
+Pillow
+trimesh
+torch
+transformers
+safetensors
+accelerate

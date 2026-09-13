@@ -1,0 +1,200 @@
+```css
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #101010;
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+.app {
+    width: 92%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px 0;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.header p {
+    color: #aaaaaa;
+}
+
+.main-container {
+    display: grid;
+    gap: 25px;
+}
+
+.card {
+    background: #1b1b1b;
+    border: 1px solid #303030;
+    border-radius: 14px;
+    padding: 25px;
+}
+
+.card h2 {
+    margin-bottom: 20px;
+}
+
+.upload-area {
+    min-height: 220px;
+    border: 2px dashed #555555;
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.upload-area:hover {
+    border-color: #c6a15b;
+}
+
+.upload-icon {
+    font-size: 45px;
+    color: #c6a15b;
+}
+
+.upload-title {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.upload-text {
+    margin-top: 6px;
+    color: #888888;
+}
+
+.image-preview-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.image-preview-container img {
+    max-width: 100%;
+    max-height: 400px;
+    border-radius: 10px;
+}
+
+.settings {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 7px;
+    color: #dddddd;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+
+    background: #292929;
+    color: #ffffff;
+
+    border: 1px solid #444444;
+    border-radius: 7px;
+
+    font-size: 15px;
+}
+
+.generate-button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 15px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #c6a15b;
+    color: #111111;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.generate-button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.status {
+    margin-top: 15px;
+    text-align: center;
+    color: #aaaaaa;
+}
+
+.result-area {
+    min-height: 250px;
+
+    background: #0b0b0b;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.result-icon {
+    font-size: 45px;
+    margin-bottom: 10px;
+    color: #c6a15b;
+}
+
+#resultPlaceholder p {
+    color: #777777;
+}
+
+.download-button {
+    display: block;
+
+    margin-top: 20px;
+    padding: 14px;
+
+    background: #c6a15b;
+    color: #111111;
+
+    text-align: center;
+    text-decoration: none;
+
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+@media (max-width: 700px) {
+
+    .settings {
+        grid-template-columns: 1fr;
+    }
+
+    .header h1 {
+        font-size: 28px;
+    }
+
+}
+```
